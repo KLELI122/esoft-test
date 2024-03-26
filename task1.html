@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <style>
+        body {
+            position: absolute;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .roof {
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 130px solid #778899;
+            position: relative;
+        }
+
+        .chimney {
+            width: 35px;
+            height: 100px;
+            background-color: #A18594;
+            border: #778899 1px solid;
+            position: absolute;
+            left: 125px;
+            z-index: -1;
+        }
+
+        .house {
+            background-color: #cbcfda;
+            border: #778899 1px solid;
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .window {
+            width: 100px; 
+            height: 100px;
+            background: #A2A2D0;
+            border: #778899 1px solid;
+            border-radius: 50%;
+        }
+
+        .door {
+            width: 100px; 
+            height: 150px;
+            background: #A18594;
+            border: #778899 1px solid;
+            align-self: self-end;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="roof">
+            <div class="chimney"></div>
+        </div>
+        <div class="house">
+            <div class="window"></div>
+            <div class="door"></div>
+        </div> 
+    </div>
+</body>
+</html>
